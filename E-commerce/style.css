@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/*resetando estilos*/
+
+:root{
+   --bg-color: var(--bg-color) #1d2631;
+   --text-color: #fff;
+   --main-color: #34e7f8;
+   --other-color: #fcfcfc;
+   /*pré-definição das cores usadas*/
+   --h1-font: 4rem;
+   --p-font:1rem;
+   /*pré-definição dos tamanhos de fonte h1 e parágrafo*/
+}
+/*define previamente a paleta de cores que serão ultilizadas no site*/
+
+body{
+    background-color: #1d2631;
+    color: var(--text-color);
+}
+/*com as cores pré-definidas em root{}basta chamar "var" e entre parenteses
+informar qual predefinição usar*/
+
+header{
+    position: fixed;
+    /*um position fixed define que sempre o elemento permanecerá no mesmo lugar indepdente se o site for
+    scrollado*/
+    width: 100%;
+    /*vai ocupar todo o espaço*/
+    top: 0;
+    /*distancia do topo*/
+    right: 0;
+    /*distancia da direita*/
+    z-index: 1000;
+    /*z-index define o que está "por cima" dependendo do valor*/
+    display: flex;
+    align-items: center;
+    /*alinha todo conteúdo no centro em ralação ao header*/
+    justify-content: space-between;
+    /*espaõ entre os elementos*/
+    padding: 30px 8%;
+    /*distancia entre o conteúdo de um elemento e suas bordas*/
+}
+
+.logo{
+   display: flex;
+   align-items: center;
+   color: var(--text-color);
+   font-size: 28px;
+   font-weight: bold;
+   /*font weight define o "peso" da fonte escala entre negrito e claro*/
+
+}
+
+.logo i{
+   color:var(--main-color);
+   /*logo "i" pois o i se refere a logo em si e não ao nome, chama o var para a cor pré definida*/
+   font-size: 32px;
+   /*font-size para aumentar o tamanho da logo*/
+   margin-right: 5px;
+   /*espaço em relação a margem direita*/
+}
+
+.navigator{
+    display: flex;
+    /*posiciona um elemento ao lado do outro*/
+}
+/*estilizando os links:*/
+.navigator a{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    /*separação entre eles*/
+    transition: a .55s ease;
+    /*definiu tempo e efeito da transição*/
+}
+
+.navigator a:hover{
+    color: var(--main-color)
+}
+/*cria a transição "por o mouse encima" e defina apenas a cor*/
+
+.header-icons{
+    display: flex;
+    /*aos lados*/
+    align-items: center;
+    /*alinha aos centros*/
+}
+
+#menu{
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 1001;
+  cursor: pointer;
+  /*muda o cursor ao passar por cima*/
+
+}
+/*menu é um ID não um class, chama com a hashtag*/
+
+.header-icons i{
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.header-icons i:hover{
+    color: var(--main-color);
+    transform: translateY(-5px);
+    /*o transforma irá subir o icone em -5px Y quando passar o cursor por cima*/
+}
+
+
+.home h1{
+    margin-top: 100px;
+    padding-left: 100px;
+    font-size: 40px;
+}
+
+.content{
+    text-align: left;
+    margin-top: 230px;
+}
+
+
+
+.image-cube{
+    margin-top: 120px;
+    display: flex;
+    
+}
+
+.image-cube p{
+    padding-top: 80px ;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+
+.image-cube img{
+    height: 500px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.image-cube img:hover{
+    transform: translateY(-5px);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+
+

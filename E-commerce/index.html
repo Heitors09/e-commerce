@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecarousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"><link rel="stylesheet" href="stylecarousel.css">
+    <!--link da font abaixo e acima o dos icones-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="slide.js" defer></script>
+    <!--"defer" serve para carregar o javascript apenas quando todo o site for carregado-->
+    <title>E-commerce</title>
+</head>
+<body>
+    <!--cria um header para colocar a logo, as opções , e as logos finais do carrinho e menu-->
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-joystick-alt'></i>Joystick</a>
+
+        <ul class="navigator">
+            <li><a href="#">Visão Geral</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact us</a></li>
+            <!--todos tem a tag a para serem tratados como links-->
+        </ul>
+        <!--cria uma div para os icones finais-->
+        <div class="header-icons">
+            <i class='bx bx-cart' ></i>
+            <!--cria uma div dentro del pro icone menu para comportar mais opções-->
+            <div id="menu"><i class='bx bx-menu'></i></div>
+
+        </div>
+
+    </header>
+    
+    <section class="home">
+        <h1>Retro Gaming</h1>
+        <div class="image-cube">
+            <img src="./images/gamecube_with_gba_player_png_by_framerater_dd3cdb8-pre.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tenetur 
+                explicabo necessitatibus, rem rerum asperiores voluptatem! Aliquam, 
+                accusamus natus et temporibus consequuntur quae impedit dolorem 
+                sed fugiat non. Nostrum, libero!,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tenetur 
+                explicabo necessitatibus,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tenetur 
+                explicabo necessitatibus, rem rerum asperiores voluptatem! Aliquam, 
+                accusamus natus et temporibus consequuntur quae impedit dolorem 
+                sed fugiat non. Nostrum, libero!,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tenetur 
+                explicabo necessitatibus</p>
+        </div>
+    </section>
+    <!--tag que cria uma seção no body(home)-->
+    <section class="slider">
+        <!--section da estrutura do slider-->
+        <div class="slider-content">
+            <!--bolinhas para selecionar imagens do slide-->
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <!--Imagens do slide-->
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="carousel/playstation_png_by_framerater_ddc0jc3-fullview.png" alt="slide 1">
+            </div>
+            <!--mesma div contendo duas classes, com o espaço-->
+            <div class="slide-box">
+                <img class="img-desktop" src="carousel/gamecube_png_by_framerater_dd7fvk4-pre.png">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="carousel/playstation_2_phat_png_by_framerater_dd42vvw-pre.png" alt="slide 1">
+            </div>
+            <!--rolagem automatica-->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <!--Rolagem manual-->
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
